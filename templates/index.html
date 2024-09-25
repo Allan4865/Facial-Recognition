@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reconocimiento Facial - Universidad XYZ</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="ruta/a/font-awesome.min.css">
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+  <div class="sidebar">
+    <nav>
+      <ul>
+        <li><a href="#about">Acerca de</a></li>
+        <li><a href="#testimonial">Testimonios</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+    <header>
+      <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#about">Acerca de</a></li>
+          <li><a href="#testimonial">Testimonios</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Reconocimiento Facial en Tiempo Real</h1>
+    <div class="video-container">
+      <img id="video-stream" src="{{ url_for('video_feed') }}" alt="Video Stream">
+    </div>
+    <section id="about" class="university-info">
+      <h2>Bienvenidos a la Escuela Politécnica Nacional</h2>
+      <p>La Escuela Politécnica Nacional es una institución líder en educación superior y tecnología en Ecuador. Nuestra misión es formar profesionales altamente capacitados y contribuir al desarrollo científico y tecnológico del país.</p>
+    </section>
+    <section class="highlighted-section">
+      <h2>¿Qué es el reconocimiento facial en tiempo real?</h2>
+      <p>El reconocimiento facial en tiempo real es una tecnología avanzada que utiliza redes neuronales convolucionales, un tipo de algoritmo de aprendizaje automático, para analizar características faciales únicas y realizar la identificación y verificación de personas en tiempo real.</p>
+      <p>Las redes neuronales convolucionales son especialmente efectivas en el reconocimiento facial, ya que pueden aprender a detectar patrones y características específicas en imágenes, como los contornos de los ojos, la nariz y la boca. Estas redes se entrenan utilizando conjuntos de datos masivos que contienen imágenes de rostros etiquetados, lo que les permite aprender a reconocer y distinguir las diferencias sutiles entre diferentes personas.</p>
+      <p>Al aplicar redes neuronales convolucionales al reconocimiento facial en tiempo real, el sistema puede capturar imágenes de video en vivo y analizar cada cuadro para identificar y rastrear los rostros presentes. Luego, mediante comparaciones y coincidencias con una base de datos predefinida de rostros conocidos, el sistema puede realizar acciones como autorizar el acceso a un edificio, identificar a una persona en una multitud o brindar información personalizada.</p>
+      <p>Esta tecnología de reconocimiento facial en tiempo real ha demostrado ser valiosa en una variedad de aplicaciones, como seguridad, control de acceso, marketing personalizado y asistencia personal. Su capacidad para analizar características faciales únicas con precisión y velocidad en tiempo real la convierte en una herramienta poderosa para mejorar la seguridad y la eficiencia en diversos entornos.</p>
+    </section>
+    <section id="testimonial" class="testimonial-section">
+      <h2>Testimonios de nuestros estudiantes</h2>
+      <!-- Aquí puedes agregar los testimonios de los estudiantes -->
+    </section>
+    <section id="contact" class="contact-section">
+      <h2>Contacto</h2>
+      <p>Si tienes alguna pregunta o deseas obtener más información, no dudes en contactarnos.</p>
+      <!-- Aquí puedes agregar el formulario de contacto -->
+    </section>
+    <div class="social-media-links">
+      <h2>Síguenos en redes sociales</h2>
+      <ul class="social-links">
+        <li><a href="https://www.epn.edu.ec/" target="_blank">Facebook</a></li>
+        <li><a href="https://www.epn.edu.ec/" target="_blank">Twitter</a></li>
+        <li><a href="https://www.epn.edu.ec/" target="_blank">Instagram</a></li>
+      </ul>
+    </div>
+    <section class="upcoming-events">
+      <h2>Próximos eventos</h2>
+      <!-- Aquí puedes agregar los próximos eventos de la universidad -->
+    </section>
+    <section class="results-section">
+      <h2>Resultados</h2>
+      <div id="results-container"></div>
+    </section>
+  </div>
+</body>
+</html>
